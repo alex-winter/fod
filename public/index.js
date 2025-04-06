@@ -21,6 +21,7 @@ import { FilesComponent } from './components/generic/file/files-component.js'
 import { CodeComponent } from './components/generic/code-component.js'
 import { match } from './services/match.js'
 import { Component } from './component.js'
+import { AppComponent } from './components/App.component.js'
 
 window.match = match
 window.Component = Component
@@ -52,11 +53,11 @@ TodoRowComponent.load()
 TodoItemEditFormComponent.load()
 TodoModalNewComponent.load()
 
+AppComponent.load()
+
 const router = new Router({
 
-    '/example/': DashboardComponent,
-    
-    '/example/about': AboutMeComponent,
+    '/': AppComponent,
 
 })
 

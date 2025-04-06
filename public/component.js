@@ -133,7 +133,7 @@ export class Component extends HTMLElement
             
             this.shadow.appendChild(style)
 
-            const fragment = this.createFragment()
+            const fragment = this.createFragment(this.template())
 
             this.rootElementTagName = fragment.firstElementChild.tagName.toLowerCase()
 
@@ -155,23 +155,34 @@ export class Component extends HTMLElement
         });
     }
 
-    createFragment() {
+    createFragment(template) {
         return document.createRange().createContextualFragment(
             this.renderTemplate(
-                this.template()
+                template
             )
         )
     }
 
     refresh() {
         this.shadow.replaceChild(
-            this.createFragment(),
+            this.createFragment(this.template()),
             this.shadow.querySelector(this.rootElementTagName)
         )
     }
 
     appendTemplate(element, template) {
         element.insertAdjacentHTML('beforeend', template)
+    }
+
+    /**
+     * 
+     * @param {HTMLElement} element 
+     * @param {string} template 
+     */
+    replaceTemplate(element, template) {
+        element.replaceChildren(
+            this.createFragment(template)
+        )
     }
 
     /**
