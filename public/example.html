@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Alex Winter</title>
+
+    <link rel="stylesheet" href="/core.css">
+</head>
+<body>
+    <div id="header">
+      <div class="flex-row">
+        <div id="logo" class="p-1">
+          <img src="/images/logo.png" alt="">
+        </div>
+        <div id="search" class="flex-1">
+          <input type="text" class="px-2 py-1" placeholder="Search ...">
+        </div>
+      </div>
+    </div>
+      
+    <div id="page" class="flex-row flex-1">
+      <div id="sideBar">
+        <div class="mt-3">
+          <navigation-menu-component></navigation-menu-component>
+        </div>
+      </div>
+      <div id="content" class="flex-1 py-2 px-4">
+        
+      </div>
+    </div>
+
+    <script type="module" src="/index.js"></script>
+</body>
+</html>

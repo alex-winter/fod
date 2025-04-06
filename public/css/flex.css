@@ -1,0 +1,47 @@
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+}
+.flex-fill-height {
+    align-items: stretch;
+}
+
+.flex-1 {
+    flex: 1 0 0;
+}
+.flex-2 {
+    flex: 2 0 0;
+}
+.flex-3 {
+    flex: 3 0 0;
+}
+.flex-4 {
+    flex: 4 0 0;
+}
+.flex-5 {
+    flex: 5 0 0;
+}
+
+.gap-1 {
+    gap: 4px;
+}
+
+.gap-2 {
+    gap: 8px;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}

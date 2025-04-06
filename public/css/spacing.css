@@ -1,0 +1,65 @@
+
+:root {
+    --spacing-unit: 4;
+    
+    --spacing-unit-1: calc(var(--spacing-unit) * 1px);
+    --spacing-unit-2: calc(var(--spacing-unit) * 2px);
+    --spacing-unit-3: calc(var(--spacing-unit) * 3px);
+    --spacing-unit-4: calc(var(--spacing-unit) * 4px);
+}
+
+.p-1 {
+    padding: var(--spacing-unit-1);
+}
+
+.p-2 {
+    padding: var(--spacing-unit-2);
+}
+
+.p-3 {
+    padding: var(--spacing-unit-3);
+}
+
+.py-1 {
+    padding-top: var(--spacing-unit-1);
+    padding-bottom: var(--spacing-unit-1);
+}
+
+.py-2 {
+    padding-top: var(--spacing-unit-2);
+    padding-bottom: var(--spacing-unit-2);
+}
+
+.px-2 {
+    padding-left: var(--spacing-unit-2);
+    padding-right: var(--spacing-unit-2);
+}
+
+.px-3 {
+    padding-left: var(--spacing-unit-3);
+    padding-right: var(--spacing-unit-3);
+}
+
+.px-4 {
+    padding-left: var(--spacing-unit-4);
+    padding-right: var(--spacing-unit-4);
+}
+
+.mt-2 {
+    margin-top: var(--spacing-unit-2);
+}
+
+.mt-3 {
+    margin-top: var(--spacing-unit-3);
+}
+
+.mx-1 {
+    margin-left: var(--spacing-unit-1);
+    margin-right: var(--spacing-unit-1);
+}
+
+.my-1 {
+    margin-top: var(--spacing-unit-1);
+    margin-bottom: var(--spacing-unit-1);
+}
+
